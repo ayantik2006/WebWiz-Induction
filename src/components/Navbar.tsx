@@ -31,9 +31,12 @@ function Navbar() {
           >
             Team
           </Link>
-          <div className="text-xl font-semibold text-neutral-300 hover:text-white cursor-pointer">
-            Events
-          </div>
+          <Link
+            to="/me"
+            className="text-xl font-semibold text-neutral-300 hover:text-white cursor-pointer"
+          >
+            Me
+          </Link>
         </div>
         <button
           className="text-lg border-2 border-[#AB1CD9] px-4 py-1 rounded-3xl text-[#cb65ed] [@media(max-width:776px)]:hidden cursor-pointer duration-200 font-semibold"
@@ -75,9 +78,12 @@ function Navbar() {
             >
               Team
             </Link>
-            <div className="text-2xl font-semibold text-neutral-300 hover:text-white cursor-pointer">
-              Events
-            </div>
+            <Link
+              to="/me"
+              className="text-xl font-semibold text-neutral-300 hover:text-white cursor-pointer"
+            >
+              Me
+            </Link>
             <button
               className="text-lg border-2 border-[#AB1CD9] px-4 py-1 rounded-3xl text-[#cb65ed] cursor-pointer"
               onClick={() => {
@@ -93,7 +99,7 @@ function Navbar() {
 
       {!!isInducted && (
         <div className="fixed w-screen h-screen backdrop-blur-2xl z-50 flex flex-col items-center justify-ceter text-white gap-5 text-center">
-          <h1 className="text-3xl mt-30">Thank you for inducting me 😃</h1>
+          <h1 className="text-3xl mt-20">Thank you for inducting me 😃</h1>
           <h2 className="text-xl text-neutral-300">
             Glad to be a part of WEBWIZ NITR
           </h2>
