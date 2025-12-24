@@ -50,7 +50,6 @@ function Navbar() {
           className="[@media(min-width:776px)]:hidden cursor-pointer duration-300"
           onClick={() => {
             setIsDropNavVisible((prev) => !prev);
-            setIsInducted(true);
           }}
         >
           {isDropNavVisible ? <X size={32} /> : <Menu size={32} />}
